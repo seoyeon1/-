@@ -29,7 +29,6 @@ for article in articles:
     comp = article.select_one('span._sp_each_source').text.split(' ')[0].replace('언론사', '')#언론사
     ws1.append([title , url, comp])
 
-
-
 driver.quit()
+
 wb.save(filename='articles.xlsx')
