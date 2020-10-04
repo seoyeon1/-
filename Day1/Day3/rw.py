@@ -7,7 +7,7 @@
 
 #파일 읽기
 text = ''
-with open("test.txt", "r", encoding="utf-8") as f:
+with open("../test.txt", "r", encoding="utf-8") as f:
     lines = f.readlines()
     for line in lines:#1줄씩 읽고 출력
         text += line
